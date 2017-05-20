@@ -81,7 +81,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YFF-jr-bhp">
                                         <rect key="frame" x="182" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="Collapse Arrow_9c0006_50"/>
+                                        <state key="normal" image="Collapse Arrow_ffffff_50"/>
                                         <connections>
                                             <action selector="toggleMenu:" destination="j9k-56-u7x" eventType="touchUpInside" id="CWk-Wn-RqB"/>
                                         </connections>
@@ -102,6 +102,9 @@
                                                         <integer key="value" value="25"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="followTwitter:" destination="j9k-56-u7x" eventType="touchUpInside" id="9W4-gN-vmO"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pS3-DD-YmH">
                                                 <rect key="frame" x="152" y="0.0" width="50" height="50"/>
@@ -116,6 +119,9 @@
                                                         <integer key="value" value="25"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="followFacebook:" destination="j9k-56-u7x" eventType="touchUpInside" id="VQY-45-OgJ"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mV8-Tu-dCg">
                                                 <rect key="frame" x="304" y="0.0" width="50" height="50"/>
@@ -130,6 +136,9 @@
                                                         <integer key="value" value="25"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="followInstagram:" destination="j9k-56-u7x" eventType="touchUpInside" id="Az1-2q-lTy"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -447,7 +456,7 @@
         <image name="Accueil-64" width="32" height="32"/>
         <image name="Carte-50" width="25" height="25"/>
         <image name="Ciseaux de coiffure-50" width="25" height="25"/>
-        <image name="Collapse Arrow_9c0006_50" width="25" height="25"/>
+        <image name="Collapse Arrow_ffffff_50" width="25" height="25"/>
         <image name="Facebook_226bf1_50" width="25" height="25"/>
         <image name="Instagram Old_9c0006_50" width="25" height="25"/>
         <image name="TÃ©lÃ©phone-50" width="25" height="25"/>

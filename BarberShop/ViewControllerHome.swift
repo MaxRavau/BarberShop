@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Social
 
 class ViewControllerHome: UIViewController {
     
@@ -188,7 +189,72 @@ class ViewControllerHome: UIViewController {
         }
     }
 
+    @IBAction func followTwitter(_ sender: Any) {
+        
+        if SLComposeViewController.isAvailable(forServiceType: SLServiceTypeTwitter) {
+            
+            let tweetShare:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
+            
+            self.present(tweetShare, animated: true, completion: nil)
+            
+        } else {
+            
+            let alert = UIAlertController(title: "Compte", message: "Veuillez vous connecter à un compte Twitter pour tweeter.",
+                                          
+                                          preferredStyle: UIAlertControllerStyle.alert)
+            
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            
+            self.present(alert, animated: true, completion: nil)
+        }
+
+        
+    }
+    @IBAction func followFacebook(_ sender: Any) {
+        
+        if SLComposeViewController.isAvailable(forServiceType: SLServiceTypeFacebook) {
+            
+            let fbShare:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
+            
+            self.present(fbShare, animated: true, completion: nil)
+            
+        } else {
+            let alert = UIAlertController(title: "Compte", message: "Veuillez vous connecter à un compte Facebook pour partager.",
+                                          
+                                          preferredStyle: UIAlertControllerStyle.alert)
+            
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            
+            self.present(alert, animated: true, completion: nil)
+        }
+
+        
+    }
+    @IBAction func followInstagram(_ sender: Any) {
+        
+        openInstagram()
+        
+    }
    
+    
+    func openInstagram() {
+        
+        
+        var instURL: NSURL = NSURL (string: "instagram://user?username=Instagram")! // Replace = Instagram by the your instagram user name
+        var instWB: NSURL = NSURL (string: "https://instagram.com/instagram/")! // Replace the link by your instagram weblink
+        
+        if (UIApplication.shared.canOpenURL(instURL as URL)) {
+            // Open Instagram application
+            UIApplication.shared.openURL(instURL as URL)
+        } else {
+            // Open in Safari
+            UIApplication.shared.openURL(instWB as URL)
+            
+            
+        }
+    }
+
+    
     @IBAction func buttonPhoneBar(_ sender: Any) {
         
         animateIn()
