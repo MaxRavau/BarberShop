@@ -18,6 +18,7 @@
 		50B310201EC203B70032AAB9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50B3101F1EC203B70032AAB9 /* MapKit.framework */; };
 		50B310221EC206480032AAB9 /* PinAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B310211EC206480032AAB9 /* PinAnnotation.swift */; };
 		50B310241EC217050032AAB9 /* ViewControllerHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B310231EC217050032AAB9 /* ViewControllerHome.swift */; };
+		50DD1CB61ED9ACA500C30B3C /* TableViewControllerNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DD1CB51ED9ACA500C30B3C /* TableViewControllerNav.swift */; };
 		F3BF32C01134739EB7374F80 /* Pods_BarberShopUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEEB244C8D6F7BB2DE817355 /* Pods_BarberShopUITests.framework */; };
 		F6E2E2CC772F9FBE558F6870 /* Pods_BarberShopTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7428D22B7E6F4A310290837C /* Pods_BarberShopTests.framework */; };
 /* End PBXBuildFile section */
@@ -58,6 +59,7 @@
 		50B3101F1EC203B70032AAB9 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		50B310211EC206480032AAB9 /* PinAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinAnnotation.swift; sourceTree = "<group>"; };
 		50B310231EC217050032AAB9 /* ViewControllerHome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerHome.swift; sourceTree = "<group>"; };
+		50DD1CB51ED9ACA500C30B3C /* TableViewControllerNav.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewControllerNav.swift; sourceTree = "<group>"; };
 		7428D22B7E6F4A310290837C /* Pods_BarberShopTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BarberShopTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		76692779420A2DBCC20AFABE /* Pods-BarberShopTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BarberShopTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BarberShopTests/Pods-BarberShopTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8652EC0941BFE84FFB07F65F /* Pods_BarberShop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BarberShop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,6 +126,7 @@
 				50B30FF11EC1D6640032AAB9 /* AppDelegate.swift */,
 				50B30FF31EC1D6640032AAB9 /* ViewController.swift */,
 				50B310231EC217050032AAB9 /* ViewControllerHome.swift */,
+				50DD1CB51ED9ACA500C30B3C /* TableViewControllerNav.swift */,
 				50B310211EC206480032AAB9 /* PinAnnotation.swift */,
 				50B30FF51EC1D6640032AAB9 /* Main.storyboard */,
 				50B30FF81EC1D6640032AAB9 /* Assets.xcassets */,
@@ -468,6 +471,7 @@
 				50B310221EC206480032AAB9 /* PinAnnotation.swift in Sources */,
 				50B30FF21EC1D6640032AAB9 /* AppDelegate.swift in Sources */,
 				50B310241EC217050032AAB9 /* ViewControllerHome.swift in Sources */,
+				50DD1CB61ED9ACA500C30B3C /* TableViewControllerNav.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
