@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -21,23 +21,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="378649_159158774184934_447901103_n" translatesAutoresizingMaskIntoConstraints="NO" id="SAM-Fn-7Bl">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="378649_159158774184934_447901103_n" translatesAutoresizingMaskIntoConstraints="NO" id="exe-fr-jBE">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="SAM-Fn-7Bl" secondAttribute="bottom" id="C2g-WS-5HP"/>
-                            <constraint firstItem="SAM-Fn-7Bl" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="DJG-L8-0Ho"/>
-                            <constraint firstItem="SAM-Fn-7Bl" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="Oj6-rk-NlU"/>
-                            <constraint firstAttribute="trailing" secondItem="SAM-Fn-7Bl" secondAttribute="trailing" id="hz2-Sm-hmE"/>
+                            <constraint firstItem="exe-fr-jBE" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="4DZ-ph-By3"/>
+                            <constraint firstAttribute="trailing" secondItem="exe-fr-jBE" secondAttribute="trailing" id="qKr-L5-3KL"/>
+                            <constraint firstItem="exe-fr-jBE" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="qWE-gr-aw7"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="exe-fr-jBE" secondAttribute="bottom" id="tdF-vN-NIF"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+            <point key="canvasLocation" x="50.724637681159422" y="374.18478260869568"/>
         </scene>
     </scenes>
     <resources>

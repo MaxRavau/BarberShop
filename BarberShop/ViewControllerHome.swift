@@ -53,6 +53,7 @@ class ViewControllerHome: UIViewController {
         label1.alpha = 0
         label2.alpha = 0
         label3.alpha = 0
+        imageLogoView.alpha = 0
         
         buttonTwitter.alpha = 0
         buttonFacebook.alpha = 0
@@ -118,11 +119,12 @@ class ViewControllerHome: UIViewController {
         
         UIView.animate(withDuration: 1, animations: {
             
-            self.label1.alpha = 1
-        }) { (true) in
+            
+            self.imageLogoView.alpha = 1
+        }, completion: { (true) in
             
             self.showTitle1()
-        }
+        })
         
         
     }
@@ -132,7 +134,7 @@ class ViewControllerHome: UIViewController {
         
         UIView.animate(withDuration: 1, animations: {
             
-            self.label2.alpha = 1
+            self.label1.alpha = 1
             
         }, completion: { (true) in
             
@@ -143,6 +145,21 @@ class ViewControllerHome: UIViewController {
     }
     
     func showTitle2(){
+        
+        UIView.animate(withDuration: 1, animations: {
+            
+            self.label2.alpha = 1
+            
+        }, completion: { (true) in
+            
+            self.showTitle3()
+        })
+        
+        
+    }
+
+    
+    func showTitle3(){
         
         UIView.animate(withDuration: 1, animations: {
             
@@ -240,8 +257,8 @@ class ViewControllerHome: UIViewController {
     func openInstagram() {
         
         
-        var instURL: NSURL = NSURL (string: "instagram://user?username=Instagram")! // Replace = Instagram by the your instagram user name
-        var instWB: NSURL = NSURL (string: "https://instagram.com/instagram/")! // Replace the link by your instagram weblink
+        let instURL: NSURL = NSURL (string: "instagram://user?username=Instagram")! // Replace = Instagram by the your instagram user name
+        let instWB: NSURL = NSURL (string: "https://instagram.com/instagram/")! // Replace the link by your instagram weblink
         
         if (UIApplication.shared.canOpenURL(instURL as URL)) {
             // Open Instagram application
@@ -266,7 +283,7 @@ class ViewControllerHome: UIViewController {
     }
     @IBAction func buttonPhoneNumber(_ sender: Any) {
         
-        var url: NSURL = NSURL(string: "tel://0983697787")!
+        let url: NSURL = NSURL(string: "tel://0983697787")!
         UIApplication.shared.openURL(url as URL)
     }
     override func didReceiveMemoryWarning() {
