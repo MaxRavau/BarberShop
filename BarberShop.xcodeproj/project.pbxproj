@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		033B8317595A1CF7CD92C78F /* Pods_BarberShop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8652EC0941BFE84FFB07F65F /* Pods_BarberShop.framework */; };
+		508E766D1EE6DD3F00C5CC3D /* BWWalkthroughPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508E766B1EE6DD3F00C5CC3D /* BWWalkthroughPageViewController.swift */; };
+		508E766E1EE6DD3F00C5CC3D /* BWWalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508E766C1EE6DD3F00C5CC3D /* BWWalkthroughViewController.swift */; };
+		508E76701EE6E2E800C5CC3D /* ViewControllerPrestation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508E766F1EE6E2E800C5CC3D /* ViewControllerPrestation.swift */; };
 		50B30FF21EC1D6640032AAB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B30FF11EC1D6640032AAB9 /* AppDelegate.swift */; };
 		50B30FF41EC1D6640032AAB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B30FF31EC1D6640032AAB9 /* ViewController.swift */; };
 		50B30FF71EC1D6640032AAB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50B30FF51EC1D6640032AAB9 /* Main.storyboard */; };
@@ -43,6 +46,9 @@
 /* Begin PBXFileReference section */
 		1A802E319F1370902A14CDC3 /* Pods-BarberShop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BarberShop.release.xcconfig"; path = "Pods/Target Support Files/Pods-BarberShop/Pods-BarberShop.release.xcconfig"; sourceTree = "<group>"; };
 		4AE9C7EC1ABC32C54C5D1D3E /* Pods-BarberShop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BarberShop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BarberShop/Pods-BarberShop.debug.xcconfig"; sourceTree = "<group>"; };
+		508E766B1EE6DD3F00C5CC3D /* BWWalkthroughPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BWWalkthroughPageViewController.swift; sourceTree = "<group>"; };
+		508E766C1EE6DD3F00C5CC3D /* BWWalkthroughViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BWWalkthroughViewController.swift; sourceTree = "<group>"; };
+		508E766F1EE6E2E800C5CC3D /* ViewControllerPrestation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerPrestation.swift; sourceTree = "<group>"; };
 		50B30FEE1EC1D6640032AAB9 /* BarberShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarberShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50B30FF11EC1D6640032AAB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50B30FF31EC1D6640032AAB9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -127,7 +133,10 @@
 				50B30FF31EC1D6640032AAB9 /* ViewController.swift */,
 				50B310231EC217050032AAB9 /* ViewControllerHome.swift */,
 				50DD1CB51ED9ACA500C30B3C /* TableViewControllerNav.swift */,
+				508E766F1EE6E2E800C5CC3D /* ViewControllerPrestation.swift */,
 				50B310211EC206480032AAB9 /* PinAnnotation.swift */,
+				508E766B1EE6DD3F00C5CC3D /* BWWalkthroughPageViewController.swift */,
+				508E766C1EE6DD3F00C5CC3D /* BWWalkthroughViewController.swift */,
 				50B30FF51EC1D6640032AAB9 /* Main.storyboard */,
 				50B30FF81EC1D6640032AAB9 /* Assets.xcassets */,
 				50B30FFA1EC1D6640032AAB9 /* LaunchScreen.storyboard */,
@@ -468,9 +477,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				50B30FF41EC1D6640032AAB9 /* ViewController.swift in Sources */,
+				508E76701EE6E2E800C5CC3D /* ViewControllerPrestation.swift in Sources */,
 				50B310221EC206480032AAB9 /* PinAnnotation.swift in Sources */,
 				50B30FF21EC1D6640032AAB9 /* AppDelegate.swift in Sources */,
+				508E766D1EE6DD3F00C5CC3D /* BWWalkthroughPageViewController.swift in Sources */,
 				50B310241EC217050032AAB9 /* ViewControllerHome.swift in Sources */,
+				508E766E1EE6DD3F00C5CC3D /* BWWalkthroughViewController.swift in Sources */,
 				50DD1CB61ED9ACA500C30B3C /* TableViewControllerNav.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -333,10 +333,276 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Zmu-Od-hQ0" kind="relationship" relationship="rootViewController" id="buK-U6-gf0"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aXU-wD-RVy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1442.0289855072465" y="502.98913043478262"/>
+            <point key="canvasLocation" x="-2264" y="501"/>
+        </scene>
+        <!--View Controller Prestation-->
+        <scene sceneID="wz6-Mc-3ra">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cWA-xt-2oD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="Main" id="Zmu-Od-hQ0" customClass="ViewControllerPrestation" customModule="BarberShop" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Gm4-KR-R7k"/>
+                        <viewControllerLayoutGuide type="bottom" id="8co-ks-ZYb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gs0-CK-l94">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ub-7i-kW6">
+                                <rect key="frame" x="55" y="216" width="304" height="304"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="304" id="Ada-vx-MbC"/>
+                                    <constraint firstAttribute="height" constant="304" id="naw-43-FGU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-ExtraBlack" family="Optima" pointSize="23"/>
+                                <state key="normal" title="NOS PRESTATIONS">
+                                    <color key="titleColor" red="0.091168888700000006" green="0.65976668279999995" blue="1" alpha="0.74769905820000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="152"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonShowPrestations" destination="Zmu-Od-hQ0" eventType="touchUpInside" id="sra-xN-Byd"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="378649_159158774184934_447901103_n" translatesAutoresizingMaskIntoConstraints="NO" id="H85-yb-j0c">
+                                <rect key="frame" x="158" y="254" width="99" height="99"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="99" id="73r-gG-pdB"/>
+                                    <constraint firstAttribute="width" constant="99" id="9oY-09-sRm"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Homme, Femme, Enfant, Barbe ..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NB1-4l-9Oe">
+                                <rect key="frame" x="103.66666666666669" y="387" width="207" height="88"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="39i-bJ-86V"/>
+                                    <constraint firstAttribute="width" constant="207" id="ugD-hl-JHp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.091168888700000006" green="0.65976668279999995" blue="1" alpha="0.74769905820000004" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="NB1-4l-9Oe" firstAttribute="top" secondItem="H85-yb-j0c" secondAttribute="bottom" constant="34" id="063-OC-yru"/>
+                            <constraint firstItem="H85-yb-j0c" firstAttribute="centerX" secondItem="gs0-CK-l94" secondAttribute="centerX" id="CFw-xY-pS0"/>
+                            <constraint firstItem="8ub-7i-kW6" firstAttribute="centerY" secondItem="gs0-CK-l94" secondAttribute="centerY" id="Jbr-um-LXR"/>
+                            <constraint firstItem="NB1-4l-9Oe" firstAttribute="centerX" secondItem="gs0-CK-l94" secondAttribute="centerX" id="SW7-gd-TpX"/>
+                            <constraint firstItem="8ub-7i-kW6" firstAttribute="top" secondItem="H85-yb-j0c" secondAttribute="bottom" constant="-137" id="ijU-Ko-zYP"/>
+                            <constraint firstItem="8ub-7i-kW6" firstAttribute="centerY" secondItem="gs0-CK-l94" secondAttribute="centerY" id="kw2-GE-vVJ"/>
+                            <constraint firstItem="8ub-7i-kW6" firstAttribute="centerX" secondItem="H85-yb-j0c" secondAttribute="centerX" id="qxB-B7-1gs"/>
+                            <constraint firstItem="8ub-7i-kW6" firstAttribute="centerX" secondItem="gs0-CK-l94" secondAttribute="centerX" id="yjX-nw-puv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="0MA-M7-LrX"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-1491.304347826087" y="500.54347826086962"/>
+        </scene>
+        <!--Walkthrough View Controller-->
+        <scene sceneID="Uzg-za-fwP">
+            <objects>
+                <viewController storyboardIdentifier="wok" id="G5F-59-9Ln" customClass="BWWalkthroughViewController" customModule="BarberShop" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cqB-Np-XgX"/>
+                        <viewControllerLayoutGuide type="bottom" id="A1N-UT-sDK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yum-zk-rG7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qdp-dn-gdB">
+                                <rect key="frame" x="369" y="28" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="D95-d4-Hll"/>
+                                    <constraint firstAttribute="height" constant="25" id="Xp8-hj-5dl"/>
+                                </constraints>
+                                <state key="normal" image="Close Window_fc3941_100"/>
+                                <connections>
+                                    <action selector="close:" destination="G5F-59-9Ln" eventType="touchUpInside" id="d58-d4-Pwm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qdp-dn-gdB" firstAttribute="top" secondItem="cqB-Np-XgX" secondAttribute="bottom" constant="8" id="iqH-NT-JKF"/>
+                            <constraint firstAttribute="trailing" secondItem="qdp-dn-gdB" secondAttribute="trailing" constant="20" id="xIz-1t-ukZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="closeButton" destination="qdp-dn-gdB" id="cu5-0N-wvg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Shg-nI-dtJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-730.43478260869574" y="500.54347826086962"/>
+        </scene>
+        <!--Walkthrough Page View Controller-->
+        <scene sceneID="Sxc-XO-R9l">
+            <objects>
+                <viewController storyboardIdentifier="wok0" id="Uj3-aa-few" customClass="BWWalkthroughPageViewController" customModule="BarberShop" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CdL-vf-tBJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="72b-Or-KQ3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ddU-zt-rso">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iqP-Hg-QlD">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="744"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.091168888700000006" green="0.65976668279999995" blue="1" alpha="0.74769905820000004" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PAGE 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nrn-ly-GgW">
+                                <rect key="frame" x="165" y="120" width="84" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1200px-IPhone_5" translatesAutoresizingMaskIntoConstraints="NO" id="sBb-Hf-bmD">
+                                <rect key="frame" x="20" y="283" width="374" height="608"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="cd8-07-NXX"/>
+                                    <constraint firstAttribute="height" constant="608" id="w5Z-Hg-hf1"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="Mr6-b3-9jk">
+                                <rect key="frame" x="65.666666666666686" y="375" width="283" height="361"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="361" id="CIe-PX-VWn"/>
+                                    <constraint firstAttribute="width" constant="283" id="Te8-J1-8VO"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sBb-Hf-bmD" firstAttribute="centerX" secondItem="ddU-zt-rso" secondAttribute="centerX" id="58w-kU-JJq"/>
+                            <constraint firstItem="Mr6-b3-9jk" firstAttribute="centerX" secondItem="ddU-zt-rso" secondAttribute="centerX" id="HOW-mn-BkQ"/>
+                            <constraint firstAttribute="bottom" secondItem="sBb-Hf-bmD" secondAttribute="bottom" constant="-155" id="ntZ-DI-azy"/>
+                            <constraint firstItem="72b-Or-KQ3" firstAttribute="top" secondItem="Mr6-b3-9jk" secondAttribute="bottom" id="vPX-qu-gfM"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="xCA-L9-vmj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Px-Ok-Ksu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="69.565217391304358" y="500.54347826086962"/>
+        </scene>
+        <!--Walkthrough Page View Controller-->
+        <scene sceneID="xNV-ri-5Rh">
+            <objects>
+                <viewController storyboardIdentifier="wok1" id="C0P-o2-ibW" customClass="BWWalkthroughPageViewController" customModule="BarberShop" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4Zq-Fs-Ajw"/>
+                        <viewControllerLayoutGuide type="bottom" id="WMe-6f-n8O"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="wok1" id="OF6-xt-VAp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DJ4-8T-VPK">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.091168888700000006" green="0.65976668279999995" blue="1" alpha="0.74769905820000004" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PAGE 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EV7-Dt-lLS">
+                                <rect key="frame" x="165" y="119" width="84" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1200px-IPhone_5" translatesAutoresizingMaskIntoConstraints="NO" id="27y-6j-fWx">
+                                <rect key="frame" x="20" y="283" width="374" height="608"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="1ap-af-de8"/>
+                                    <constraint firstAttribute="height" constant="608" id="GEY-PH-gIc"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2017-Best-Hairstyle-3" translatesAutoresizingMaskIntoConstraints="NO" id="Isv-JF-jFZ">
+                                <rect key="frame" x="65.666666666666686" y="375" width="283" height="361"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="283" id="GnX-s1-ehC"/>
+                                    <constraint firstAttribute="height" constant="361" id="VIb-d3-RBH"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WMe-6f-n8O" firstAttribute="top" secondItem="Isv-JF-jFZ" secondAttribute="bottom" id="Btk-Pm-AGl"/>
+                            <constraint firstAttribute="bottom" secondItem="27y-6j-fWx" secondAttribute="bottom" constant="-155" id="UfE-7r-k7y"/>
+                            <constraint firstItem="Isv-JF-jFZ" firstAttribute="centerX" secondItem="OF6-xt-VAp" secondAttribute="centerX" id="YLR-0m-1P0"/>
+                            <constraint firstItem="27y-6j-fWx" firstAttribute="centerX" secondItem="OF6-xt-VAp" secondAttribute="centerX" id="sm4-1P-nQX"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vrS-cm-fcm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="805.79710144927537" y="500.54347826086962"/>
+        </scene>
+        <!--Walkthrough Page View Controller-->
+        <scene sceneID="Bpx-bd-bcm">
+            <objects>
+                <viewController storyboardIdentifier="wok2" id="ldc-Ve-Dj4" customClass="BWWalkthroughPageViewController" customModule="BarberShop" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UhR-p7-pzO"/>
+                        <viewControllerLayoutGuide type="bottom" id="Zhm-5C-oWC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="wok2" id="UEQ-xp-qsE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="meh-BJ-KbK">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.091168888700000006" green="0.65976668279999995" blue="1" alpha="0.74769905820000004" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PAGE 3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g2T-Sf-4Fz">
+                                <rect key="frame" x="165" y="121" width="84" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1200px-IPhone_5" translatesAutoresizingMaskIntoConstraints="NO" id="plY-QE-dUv">
+                                <rect key="frame" x="20" y="283" width="374" height="608"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="608" id="FRN-g4-28x"/>
+                                    <constraint firstAttribute="width" constant="374" id="r72-4I-51C"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lg-b-comment-avoir-une-barbe-lisse-en-8-etapes" translatesAutoresizingMaskIntoConstraints="NO" id="Z0r-re-y9M">
+                                <rect key="frame" x="65.666666666666686" y="375" width="283" height="361"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="283" id="DTx-v4-lgG"/>
+                                    <constraint firstAttribute="height" constant="361" id="uB3-Dh-VM0"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="plY-QE-dUv" secondAttribute="bottom" constant="-155" id="0fi-mZ-jV3"/>
+                            <constraint firstItem="Z0r-re-y9M" firstAttribute="centerX" secondItem="UEQ-xp-qsE" secondAttribute="centerX" id="B2y-Hk-6HX"/>
+                            <constraint firstItem="Zhm-5C-oWC" firstAttribute="top" secondItem="Z0r-re-y9M" secondAttribute="bottom" id="Lxe-IP-uGh"/>
+                            <constraint firstItem="plY-QE-dUv" firstAttribute="centerX" secondItem="UEQ-xp-qsE" secondAttribute="centerX" id="dCp-QU-zaf"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1F8-fS-zBz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1620" y="501"/>
         </scene>
         <!--Table View Controller Nav-->
         <scene sceneID="5jZ-xp-ZDF">
@@ -568,14 +834,19 @@
         </scene>
     </scenes>
     <resources>
+        <image name="1200px-IPhone_5" width="1200" height="2267"/>
+        <image name="2017-Best-Hairstyle-3" width="640" height="640"/>
         <image name="378649_159158774184934_447901103_n" width="358" height="342"/>
         <image name="Accueil-64" width="32" height="32"/>
         <image name="Carte-50" width="25" height="25"/>
         <image name="Ciseaux de coiffure-50" width="25" height="25"/>
+        <image name="Close Window_fc3941_100" width="100" height="100"/>
         <image name="Collapse Arrow_ffffff_50" width="25" height="25"/>
         <image name="Facebook_226bf1_50" width="25" height="25"/>
         <image name="Instagram Old_9c0006_50" width="25" height="25"/>
         <image name="TÃ©lÃ©phone-50" width="25" height="25"/>
         <image name="Twitter_2995f1_50" width="25" height="25"/>
+        <image name="bg" width="474" height="600"/>
+        <image name="lg-b-comment-avoir-une-barbe-lisse-en-8-etapes" width="1339" height="1024"/>
     </resources>
 </document>
